@@ -5,10 +5,13 @@ const bodyParser = require('body-parser')
 
 const app = express()
 
-require('dotenv').config()
+// require('dotenv').config()
 
-const PORT = process.env.PORT
 // const dbUrl = process.env.DB_URL
+
+if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+const PORT = process.env.PORT
+console.log(process.env)
 
 // console.log(PORT)
 // console.log(dbUrl)
@@ -27,7 +30,5 @@ app.use(bodyParser.json())
 app.get('/', function (req, res) {
   res.render('index')
 })
-
-// if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`))
