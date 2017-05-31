@@ -17,12 +17,14 @@ app.use(express.static('client/public'))
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))
 
+const routerHome = require('./routes/home')
 const routerRecipes = require('./routes/recipes')
 const routerShoppingList = require('./routes/shopping_list')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+app.use('/home', routerHome)
 app.use('/recipes', routerRecipes)
 app.use('/shopping_list', routerShoppingList)
 

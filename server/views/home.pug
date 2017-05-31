@@ -1,0 +1,20 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8', name='viewport', content='width=device-width, initial-scale=1.0')
+    include includes/styles
+    title Cucumbers Basket
+  body
+    include includes/navbar
+    block content
+      .container
+        .jumbotron
+          .thumbnail
+            h1 Hello user!
+            p I´m working hard to get ready this wonderful web-app ASAP!
+            br
+            p See you soon
+            img(src='img/screenshot_trello2.png')
+            //- a.btn.btn-primary.btn-sm(href='https://github.com/lfernandezcall', role='button') Go to my GitHub
+    include includes/footer
+    include includes/scripts

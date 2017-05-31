@@ -1,137 +1,102 @@
-//- META
-//----------------------------------
-meta(name='viewport', content='width=device-width, initial-scale=1.0')
+extends home
 
-
-//- NAVBAR
-//----------------------------------
-nav.navbar.navbar-default
-  .container-fluid
-    // Brand and toggle get grouped for better mobile display
-    .navbar-header
-      button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
-        span.sr-only Toggle navigation
-        span.icon-bar
-        span.icon-bar
-        span.icon-bar
-      a.navbar-brand(href='/') Cucumber Basket
-        //- img.icon-car(src="/img/cucum_icon.png")
-    // Collect the nav links, forms, and other content for toggling
-    #bs-example-navbar-collapse-1.collapse.navbar-collapse
-      ul.nav.navbar-nav
-        li.active
-          a(href='/recipes')
-            | Recipes 
-            span.sr-only (current)
-        li
-          a(href='/shopping_list')
-            | Shopping list
-      //- form.navbar-form.navbar-left
-      //-   .form-group
-      //-     input.form-control(type='text', placeholder='Search')
-      //-   button.btn.btn-default(type='submit') Search recipes
-      ul.nav.navbar-nav.navbar-right
-        li.dropdown
-          a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
-            | Welcome... enter!!
-            span.caret
-          ul.dropdown-menu
-            li
-              a(href='#') Login 
-            li
-              a(href='#') Register
-    // /.navbar-collapse
-  // /.container-fluid
-
-
-//- SHOPING LIST SELECTED RECIPES
-//----------------------------------
-.container
-  h2.media-heading
-    a Shopping list!!!!!
-    .row
-      .col-sm-12.col-md-10.col-md-offset-1
-        table.table
-          thead
-            tr
-              th Product
-              th Quantity
-          tbody
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Potato
-              td.col-sm-1.col-md-1(style='text-align: center')
-                span 3 ud
-              td.col-sm-1.col-md-1
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Onionz
-              td.col-sm-2.col-md-2(style='text-align: center')
-                span 40 gr
-              td.col-sm-2.col-md-2
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-              tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Rice
-              td.col-sm-1.col-md-1(style='text-align: center')
-                span 1000 gr
-              td.col-sm-1.col-md-1
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Pasta
-              td.col-sm-2.col-md-2(style='text-align: center')
-                span  500 gr
-              td.col-sm-2.col-md-2
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Beef
-              td.col-sm-2.col-md-2(style='text-align: center')
-                span  300 gr
-              td.col-sm-2.col-md-2
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-
-
-//- FOOTER
-//----------------------------------
-nav.navbar.navbar-default
+block content
   .container
-    .row
-      .col-xs-12.col-sm-6.col-md-6.col-lg-6
-        .copyright
-          | © 2017, made at 
-          a(href='http://www.skylabcoders.com/es/') SKYLABCODERS 💻
-      .col-xs-12.col-sm-6.col-md-6.col-lg-6
-        .design
-          a(href='https://github.com/lfernandezcall') Ad astra per aspera
-
-
-//- SCRIPTS
-//----------------------------------
-script(src='https://use.fontawesome.com/70a14eed93.js')
-script(src="/bower_components/jquery/dist/jquery.js")
-link(href='/bower_components/bootstrap/dist/css/bootstrap.min.css', rel="stylesheet")
-script(src='/bower_components/bootstrap/dist/js/bootstrap.min.js')
-
+    h4.media-heading
+      a Shopping list!!!!!
+      .row
+        .col-sm-12.col-md-10.col-md-offset-1
+          table.table
+            thead
+              tr
+                th Product
+                th Quantity
+            tbody
+              tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Potato
+                td.col-sm-1.col-md-1(style='text-align: center')
+                  span 3 ud
+                td.col-sm-1.col-md-1
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
+              tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Onionz
+                td.col-sm-2.col-md-2(style='text-align: center')
+                  span 40 gr
+                td.col-sm-2.col-md-2
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
+                tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Rice
+                td.col-sm-1.col-md-1(style='text-align: center')
+                  span 1000 gr
+                td.col-sm-1.col-md-1
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
+              tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Pasta
+                td.col-sm-2.col-md-2(style='text-align: center')
+                  span  500 gr
+                td.col-sm-2.col-md-2
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
+              tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Beef
+                td.col-sm-2.col-md-2(style='text-align: center')
+                  span  300 gr
+                td.col-sm-2.col-md-2
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
+              tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Lemons
+                td.col-sm-2.col-md-2(style='text-align: center')
+                  span 150 gr
+                td.col-sm-2.col-md-2
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
+              tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Bacon
+                td.col-sm-2.col-md-2(style='text-align: center')
+                  span  250 gr
+                td.col-sm-2.col-md-2
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
+              tr
+                td.col-sm-10.col-md-6
+                  .media
+                      h4.media-heading
+                        a Carrots
+                td.col-sm-2.col-md-2(style='text-align: center')
+                  span  200 gr
+                td.col-sm-2.col-md-2
+                  button.btn.btn-danger.btn-xs(type='button')
+                    //- span.glyphicon.glyphicon-check
+                    |  Buyed
