@@ -1,0 +1,32 @@
+extends home
+
+block content
+  .container
+    form.form-horizontal
+      fieldset
+        legend ADD RECIPE
+
+        .form-group
+          label.col-md-4.control-label(for='category') CATEGORY
+          .col-md-4
+            select#category_name.form-control.input-sm(name='category')
+
+        .form-group
+          label.col-md-4.control-label(for='add_title') TITLE
+          .col-md-4
+            input#add_date.form-control.input-sm(name='add_title', placeholder='RECIPE TITLE', required='', type='text')
+
+        .form-group
+          label.col-md-4.control-label(for='add_url') PHOTO URL
+          .col-md-4
+            input#add_by.form-control.input-sm(name='add_url', placeholder='ADD URL', required='', type='text')
+
+        .form-group
+          label.col-md-4.control-label(for='preparation') PREPARATION
+          .col-md-4
+            input#modification_date.form-control.input-sm(name='preparation', placeholder='MODIFICATION DATE', required='', type='text')
+
+        .form-group
+          label.col-md-4.control-label(for='')
+          .col-md-4
+            button.btn.btn-primary.btn-sm(id='', name='') ADD INGREDIENTS

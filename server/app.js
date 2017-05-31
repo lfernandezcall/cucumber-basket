@@ -20,12 +20,18 @@ app.set('views', path.join(__dirname, 'views'))
 const routerHome = require('./routes/home')
 const routerRecipes = require('./routes/recipes')
 const routerShoppingList = require('./routes/shopping_list')
+const routerMyStuff = require('./routes/my_stuff')
 
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+app.get('/', (eq, res) => {
+  res.redirect('/home')
+})
+
 app.use('/home', routerHome)
 app.use('/recipes', routerRecipes)
 app.use('/shopping_list', routerShoppingList)
+app.use('/my_stuff', routerMyStuff)
 
 app.listen(PORT, () => console.log(`Listening on PORT ${PORT}`))
