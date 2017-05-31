@@ -1,5 +1,7 @@
-
+//- META
+//----------------------------------
 meta(name='viewport', content='width=device-width, initial-scale=1.0')
+
 
 //- NAVBAR
 // ----------------------------------
@@ -18,11 +20,12 @@ nav.navbar.navbar-default
     #bs-example-navbar-collapse-1.collapse.navbar-collapse
       ul.nav.navbar-nav
         li.active
-          a(href='#')
+          a(href='/recipes')
             | Recipes 
             span.sr-only (current)
         li
-          a(href='#') My stuff
+          a(href='/shopping_list')
+            | Shopping list
       //- form.navbar-form.navbar-left
       //-   .form-group
       //-     input.form-control(type='text', placeholder='Search')
@@ -39,8 +42,10 @@ nav.navbar.navbar-default
               a(href='#') Register
     // /.navbar-collapse
   // /.container-fluid
+
+
 //- RECIPES GRID
-// ----------------------------------
+//----------------------------------
 div.container
   .row
     .col-sm-6.col-md-4
@@ -114,11 +119,11 @@ div.container
             a.btn.btn-default(href='#', role='button') Select
             button.btn.btn-primary.btn-md(type='button', data-toggle='modal', data-target='#myModal') + info
             i.fa.fa-shopping-basket.fa-2x.pull-right(aria-hidden='true')
+
+
 //- MODAL WINDOW
-// ----------------------------------
-
-// Button trigger modal
-
+//----------------------------------
+//- Button trigger modal
 //- .container
 //-   button.btn.btn-primary.btn-md(type='button', data-toggle='modal', data-target='#myModal')
 //-     | Launch recipe´s info extended
@@ -144,85 +149,10 @@ div.container
 
       .modal-footer
         button.btn.btn-default(type='button', data-dismiss='modal') Close
-br
-br
-br
 
-//- SHOPING LIST SELECTED RECIPES
-// ----------------------------------
 
-//- SHOPING LIST SELECTED RECIPES
-// ----------------------------------
-
-.container
-  h2.media-heading
-    a Shopping list!!!!!
-    .row
-      .col-sm-12.col-md-10.col-md-offset-1
-        table.table
-          thead
-            tr
-              th Product
-              th Quantity
-          tbody
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Potato
-              td.col-sm-1.col-md-1(style='text-align: center')
-                span 3 ud
-              td.col-sm-1.col-md-1
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Onionz
-              td.col-sm-2.col-md-2(style='text-align: center')
-                span 40 gr
-              td.col-sm-2.col-md-2
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-              tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Rice
-              td.col-sm-1.col-md-1(style='text-align: center')
-                span 1000 gr
-              td.col-sm-1.col-md-1
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Pasta
-              td.col-sm-2.col-md-2(style='text-align: center')
-                span  500 gr
-              td.col-sm-2.col-md-2
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
-            tr
-              td.col-sm-10.col-md-6
-                .media
-                    h4.media-heading
-                      a Beef
-              td.col-sm-2.col-md-2(style='text-align: center')
-                span  300 gr
-              td.col-sm-2.col-md-2
-                button.btn.btn-danger.btn-xs(type='button')
-                  //- span.glyphicon.glyphicon-check
-                  |  Buyed
 //- FOOTER
 //----------------------------------
-
 nav.navbar.navbar-default
   .container
     .row
@@ -235,8 +165,8 @@ nav.navbar.navbar-default
           a(href='https://github.com/lfernandezcall') Ad astra per aspera
 
 
-
-
+//- SCRIPTS
+//----------------------------------
 script(src='https://use.fontawesome.com/70a14eed93.js')
 script(src="/bower_components/jquery/dist/jquery.js")
 link(href='/bower_components/bootstrap/dist/css/bootstrap.min.css', rel="stylesheet")
