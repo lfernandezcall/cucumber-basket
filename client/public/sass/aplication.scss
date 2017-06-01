@@ -1,0 +1,99 @@
+
+$primary-color: #A2CA67;
+$primary-hover: #70A728;
+$primary-headings: #62843A;
+
+
+.recipes-view {
+  .thumbnail-recipes {
+    h3 {
+      color: $primary-headings;
+    }
+    p {
+      button {
+        background-color: #333333;
+      }
+      button:hover {
+        background-color: $primary-hover;
+        opacity: 0.8;
+      }
+      a {
+        color: #333333;
+      }
+      a:hover {
+        color: $primary-hover;
+        opacity: 0.8;
+      }
+      a.fa {
+        margin-top: -3px;
+      }
+    }
+  }
+}
+
+.plus-info-view {
+  .modal-header {
+    h4 {
+      color: $primary-headings;
+    }
+    // a {
+    //   color: $primary-headings;
+    // }
+    a {
+        color: #333333;
+      }
+    a:hover {
+      color: $primary-hover;
+      opacity: 0.8;
+    }
+  }
+  .modal-body  {
+    h3 {
+      color: $primary-headings;
+    }
+    p a:hover {
+      color: $primary-hover;
+      opacity: 0.8;
+    }
+  }
+  .modal-footer {
+    button {
+      background-color: #333333;
+    }
+    button:hover {
+      background-color: $primary-hover;
+      opacity: 0.8;
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//NAVBAR
+//----------------------------
+.navbar-view.navbar {
+  color: $primary-color;
+}
+.navbar-brand {
+  background-color: $primary-color;
+}
+.navbar-brand:hover {
+  background-color: $primary-hover;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+}
+

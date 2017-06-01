@@ -1,0 +1,45 @@
+.recipes-view .thumbnail-recipes h3 {
+  color: #62843A; }
+.recipes-view .thumbnail-recipes p button {
+  background-color: #333333; }
+.recipes-view .thumbnail-recipes p button:hover {
+  background-color: #70A728;
+  opacity: 0.8; }
+.recipes-view .thumbnail-recipes p a {
+  color: #333333; }
+.recipes-view .thumbnail-recipes p a:hover {
+  color: #70A728;
+  opacity: 0.8; }
+.recipes-view .thumbnail-recipes p a.fa {
+  margin-top: -3px; }
+
+.plus-info-view .modal-header h4 {
+  color: #62843A; }
+.plus-info-view .modal-header a {
+  color: #333333; }
+.plus-info-view .modal-header a:hover {
+  color: #70A728;
+  opacity: 0.8; }
+.plus-info-view .modal-body h3 {
+  color: #62843A; }
+.plus-info-view .modal-body p a:hover {
+  color: #70A728;
+  opacity: 0.8; }
+.plus-info-view .modal-footer button {
+  background-color: #333333; }
+.plus-info-view .modal-footer button:hover {
+  background-color: #70A728;
+  opacity: 0.8; }
+
+.navbar-view.navbar {
+  color: #A2CA67; }
+
+.navbar-brand {
+  background-color: #A2CA67; }
+
+.navbar-brand:hover {
+  background-color: #70A728;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s; }
+
+/*# sourceMappingURL=aplication.css.map */
