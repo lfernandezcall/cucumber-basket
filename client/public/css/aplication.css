@@ -1,17 +1,23 @@
-.recipes-view .thumbnail-recipes h3 {
-  color: #62843A; }
-.recipes-view .thumbnail-recipes p button {
-  background-color: #333333; }
-.recipes-view .thumbnail-recipes p button:hover {
-  background-color: #70A728;
-  opacity: 0.8; }
-.recipes-view .thumbnail-recipes p a {
-  color: #333333; }
-.recipes-view .thumbnail-recipes p a:hover {
-  color: #70A728;
-  opacity: 0.8; }
-.recipes-view .thumbnail-recipes p a.fa {
-  margin-top: -3px; }
+.recipes-view .container {
+  display: flex;
+  flex-wrap: wrap; }
+.recipes-view .thumbnail-recipes {
+  max-width: 400px;
+  margin: 0 auto; }
+  .recipes-view .thumbnail-recipes h3 {
+    color: #62843A; }
+  .recipes-view .thumbnail-recipes p button {
+    background-color: #333333; }
+  .recipes-view .thumbnail-recipes p button:hover {
+    background-color: #70A728;
+    opacity: 0.8; }
+  .recipes-view .thumbnail-recipes p a {
+    color: #333333; }
+  .recipes-view .thumbnail-recipes p a:hover {
+    color: #70A728;
+    opacity: 0.8; }
+  .recipes-view .thumbnail-recipes p a.fa {
+    margin-top: -3px; }
 
 .home-view {
   background-color: #FFF; }
@@ -44,5 +50,10 @@
   background-color: #70A728;
   letter-spacing: 1px;
   transition: all 0.3s ease 0s; }
+
+.footer-view .copyright {
+  color: white; }
+.footer-view a {
+  color: #A2CA67; }
 
 /*# sourceMappingURL=aplication.css.map */

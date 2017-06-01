@@ -9,7 +9,13 @@ $primary-headings: #62843A;
 //RECIPES
 //----------------------------
 .recipes-view {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .thumbnail-recipes {
+    max-width: 400px;
+    margin: 0 auto;
     h3 {
       color: $primary-headings;
     }
@@ -95,5 +101,16 @@ $primary-headings: #62843A;
   background-color: $primary-hover;
   letter-spacing: 1px;
   transition: all 0.3s ease 0s;
+}
+
+//FOOTER
+//----------------------------
+.footer-view {
+  .copyright {
+      color: white;
+  }
+  a {
+    color: $primary-color
+  }
 }
 
