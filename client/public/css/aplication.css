@@ -13,6 +13,9 @@
 .recipes-view .thumbnail-recipes p a.fa {
   margin-top: -3px; }
 
+.home-view {
+  background-color: #FFF; }
+
 .plus-info-view .modal-header h4 {
   color: #62843A; }
 .plus-info-view .modal-header a {

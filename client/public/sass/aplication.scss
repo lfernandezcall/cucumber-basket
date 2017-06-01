@@ -3,7 +3,11 @@ $primary-color: #A2CA67;
 $primary-hover: #70A728;
 $primary-headings: #62843A;
 
-
+// * {
+//   border: solid 1px red;
+// }
+//RECIPES
+//----------------------------
 .recipes-view {
   .thumbnail-recipes {
     h3 {
@@ -31,7 +35,18 @@ $primary-headings: #62843A;
   }
 }
 
-.plus-info-view {
+
+// HOME
+// ----------------------------
+.home-view {
+  // background: url("../img/cucumber_background.jpeg") no-repeat center center fixed;
+  // background-size: 100% 100%;
+  // background-repeat: no-repeat;
+  background-color: #FFF;
+}
+
+
+.plus-info-view { 
   .modal-header {
     h4 {
       color: $primary-headings;
@@ -66,21 +81,6 @@ $primary-headings: #62843A;
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 //NAVBAR

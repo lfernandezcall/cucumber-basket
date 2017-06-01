@@ -6,15 +6,36 @@ html(lang='en')
     title Cucumber Basket
   body
     include includes/navbar
+
     block content
-      .container
-        .jumbotron
-          .thumbnail
-            h1 Hello user!
-            p I´m working hard to get ready this wonderful web-app ASAP!
-            br
-            p See you soon
-            img(src='img/screenshot_trello2.png')
-            //- a.btn.btn-primary.btn-sm(href='https://github.com/lfernandezcall', role='button') Go to my GitHub
+      .jumbotron.home-view
+        .row
+          .col-xs-12.col-sm-4
+            .row
+              .container
+                .col-xs-6.col-sm-12
+                  .thumbnail
+                    .caption
+                      h2 Hello user!
+                      p I´m working hard to get ready this wonderful web-app ASAP!
+                      br
+                      p See you soon
+                .col-xs-6.col-sm-12
+                  .thumbnail
+                    img(src="img/cucumber_background.jpeg")
+                //- a.btn.btn-primary.btn-sm(href='https://github.com/lfernandezcall', role='button') Go to my GitHub
+
+          .col-xs-12.col-sm-4
+            .container
+              .thumbnail
+                img(src='img/zuchinni_with_sausage.jpg')
+                img(src='img/lentil_salad.jpg')
+                img(src='img/chicken_wings.jpg')
+
+          .hidden-xs.col-sm-4
+            .container
+              .thumbnail
+                img(src='img/screenshot_trello2.png')
+
     include includes/footer
     include includes/scripts
