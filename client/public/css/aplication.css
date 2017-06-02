@@ -1,5 +1,5 @@
 .recipes-view .thumbnail {
-  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 0;
   border: 0; }
 .recipes-view .container {
@@ -8,7 +8,7 @@
 .recipes-view .thumbnail-recipes {
   max-width: 400px;
   margin: 20px auto;
-  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
   .recipes-view .thumbnail-recipes h3 {
     color: #62843A; }
   .recipes-view .thumbnail-recipes p button {
@@ -46,8 +46,17 @@
   background-color: #70A728;
   opacity: 0.8; }
 
+.background-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  background-image: url("/img/bacon_and_chips.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
 .home-view .thumbnail {
-  box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px -1px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 0;
   border: 0; }
 
@@ -57,11 +66,13 @@
     background: none; }
 
 .shopping-list-view .thumbnail {
-  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 0;
   border: 0; }
 .shopping-list-view .table-container {
-  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15); }
+  max-width: 400px;
+  background: #FFF;
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
 
 .navbar-view.navbar {
   color: #A2CA67; }
