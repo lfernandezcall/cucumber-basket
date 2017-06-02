@@ -4,16 +4,19 @@ $primary-hover: #70A728;
 $primary-headings: #62843A;
 
 
-//----------------------------
-// * {
-//   border: solid 1px red;
-// }
-
-
 //RECIPES
 //----------------------------
 
 .recipes-view {
+  // position: absolute;
+  .thumbnail {
+  box-shadow: 3px 3px 23px 0px rgba(0,0,0,0.15);
+  //Overwriting Bootstrap settings
+  //________
+  padding: 0;
+  border: 0;
+  //________
+  }
   .container {
     display: flex;
     flex-wrap: wrap;
@@ -21,7 +24,7 @@ $primary-headings: #62843A;
   .thumbnail-recipes {
     max-width: 400px;
     margin: 20px auto;
-    box-shadow: 3px -1px 23px 0px rgba(0,0,0,0.15);
+    box-shadow: 3px 3px 23px 0px rgba(0,0,0,0.15);
     h3 {
       color: $primary-headings;
     }
@@ -46,26 +49,19 @@ $primary-headings: #62843A;
     }
   }
 }
-
-
-// HOME
-// ----------------------------
-
-.home-view {
-  // background: url("../img/cucumber_background.jpeg") no-repeat center center fixed;
-  // background-size: 100% 100%;
-  // background-repeat: no-repeat;
-  background-color: #FFF;
-}
+  //MODAL WINDOW
+  //----------------------------
 
 .plus-info-view { 
+  .thumbnail {
+  box-shadow: 3px -1px 23px 0px rgba(0,0,0,0.15);
+  padding: 0;
+  border: 0;
+  }
   .modal-header {
     h4 {
       color: $primary-headings;
     }
-    // a {
-    //   color: $primary-headings;
-    // }
     a {
         color: #333333;
       }
@@ -95,31 +91,50 @@ $primary-headings: #62843A;
 }
 
 
-.shopping-list-view {
-  .table-container {
-  width: 300px;
-  // table {
-    th {
-      border: $primary-color;
-    }
-    td {
-      border: $primary-color;
-    }
-    tr {
-      border: $primary-color;
-    }
 
-
-  //   table td {
-  //     color: $primary-headings;
-  //   }
-  //   table tr {
-  //     color: $primary-headings;
-  //   }
-  // }
+// HOME
+// ----------------------------
+// .background-img {
+//   position: absolute;
+//   height: 100%;
+//   width: 100%;
+//   opacity : 0.3;
+//   background-image: url("/img/bacon_and_chips.jpg");
+// }
+.home-view {
+  .thumbnail {
+    box-shadow: 3px -1px 23px 0px rgba(0,0,0,0.15);
+    padding: 0;
+    border: 0;
   }
-
 }
+//Overwriting Bootstrap settings
+//________
+.jumbotron {
+    background: none;
+    p {
+      background: none;
+    }
+  }
+//________
+
+
+//SHOPING LIST
+//----------------------------
+
+.shopping-list-view {
+    .thumbnail {
+      box-shadow: 3px 3px 23px 0px rgba(0,0,0,0.15);
+      //Overwriting Bootstrap settings
+      //________
+      padding: 0;
+      border: 0;
+      //________
+      }
+      .table-container {
+        box-shadow: 3px 3px 23px 0px rgba(0,0,0,0.15);
+      }
+  }
 
 //NAVBAR
 //----------------------------
@@ -135,11 +150,25 @@ $primary-headings: #62843A;
   letter-spacing: 1px;
   transition: all 0.3s ease 0s;
 }
+//Overwriting Bootstrap settings
+//________
+// .navbar .navbar-default {
+//   margin-top: 0px;
+//   position: fixed;
+//  }
+//________
+
+
 
 //FOOTER
 //----------------------------
 
 .footer-view {
+  //Overwriting Bootstrap settings
+  //________
+  // margin-bottom: 0px;
+  // position: fixed;
+  //________
   .copyright {
       color: white;
   }

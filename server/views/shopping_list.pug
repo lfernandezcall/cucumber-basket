@@ -3,8 +3,9 @@ extends home
 block content
   .container.shopping-list-view
     .row
-      .container.table-container.col-xs-12
-          h4.media-heading
+      .col-xs-12.col-sm-6
+        .table-container
+          h3.media-heading
             a Shopping list
           table.table.table-bordered
             thead
@@ -122,26 +123,7 @@ block content
                   button.btn.btn-danger.btn-xs(type='button')
                     //- span.glyphicon.glyphicon-check
                     |  Buyed
-              tr
-                td
-                  .media
-                      h4.media-heading
-                        a Potato
-                td(style='text-align: center')
-                  span 3 ud
-                td
-                  button.btn.btn-danger.btn-xs(type='button')
-                    //- span.glyphicon.glyphicon-check
-                    |  Buyed
-              tr
-                td
-                  .media
-                      h4.media-heading
-                        a Onion
-                td(style='text-align: center')
-                  span 40 gr
-                td
-                  button.btn.btn-danger.btn-xs(type='button')
-                    //- span.glyphicon.glyphicon-check
-                    |  Buyed
+      .hidden-xs.col-sm-6
+        .thumbnail
+          img(src="/img/mediterranean_diet2.jpg")
 

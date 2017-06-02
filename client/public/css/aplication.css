@@ -1,10 +1,14 @@
+.recipes-view .thumbnail {
+  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
 .recipes-view .container {
   display: flex;
   flex-wrap: wrap; }
 .recipes-view .thumbnail-recipes {
   max-width: 400px;
   margin: 20px auto;
-  box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15); }
+  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15); }
   .recipes-view .thumbnail-recipes h3 {
     color: #62843A; }
   .recipes-view .thumbnail-recipes p button {
@@ -20,9 +24,10 @@
   .recipes-view .thumbnail-recipes p a.fa {
     margin-top: -3px; }
 
-.home-view {
-  background-color: #FFF; }
-
+.plus-info-view .thumbnail {
+  box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
 .plus-info-view .modal-header h4 {
   color: #62843A; }
 .plus-info-view .modal-header a {
@@ -41,14 +46,22 @@
   background-color: #70A728;
   opacity: 0.8; }
 
+.home-view .thumbnail {
+  box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
+
+.jumbotron {
+  background: none; }
+  .jumbotron p {
+    background: none; }
+
+.shopping-list-view .thumbnail {
+  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
 .shopping-list-view .table-container {
-  width: 300px; }
-  .shopping-list-view .table-container th {
-    border: #A2CA67; }
-  .shopping-list-view .table-container td {
-    border: #A2CA67; }
-  .shopping-list-view .table-container tr {
-    border: #A2CA67; }
+  box-shadow: 3px 3px 23px 0px rgba(0, 0, 0, 0.15); }
 
 .navbar-view.navbar {
   color: #A2CA67; }
