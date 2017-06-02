@@ -3,7 +3,8 @@
   flex-wrap: wrap; }
 .recipes-view .thumbnail-recipes {
   max-width: 400px;
-  margin: 0 auto; }
+  margin: 20px auto;
+  box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15); }
   .recipes-view .thumbnail-recipes h3 {
     color: #62843A; }
   .recipes-view .thumbnail-recipes p button {
@@ -39,6 +40,15 @@
 .plus-info-view .modal-footer button:hover {
   background-color: #70A728;
   opacity: 0.8; }
+
+.shopping-list-view .table-container {
+  width: 300px; }
+  .shopping-list-view .table-container th {
+    border: #A2CA67; }
+  .shopping-list-view .table-container td {
+    border: #A2CA67; }
+  .shopping-list-view .table-container tr {
+    border: #A2CA67; }
 
 .navbar-view.navbar {
   color: #A2CA67; }

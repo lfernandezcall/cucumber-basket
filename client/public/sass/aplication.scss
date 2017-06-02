@@ -3,11 +3,16 @@ $primary-color: #A2CA67;
 $primary-hover: #70A728;
 $primary-headings: #62843A;
 
+
+//----------------------------
 // * {
 //   border: solid 1px red;
 // }
+
+
 //RECIPES
 //----------------------------
+
 .recipes-view {
   .container {
     display: flex;
@@ -15,7 +20,8 @@ $primary-headings: #62843A;
   }
   .thumbnail-recipes {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 20px auto;
+    box-shadow: 3px -1px 23px 0px rgba(0,0,0,0.15);
     h3 {
       color: $primary-headings;
     }
@@ -44,13 +50,13 @@ $primary-headings: #62843A;
 
 // HOME
 // ----------------------------
+
 .home-view {
   // background: url("../img/cucumber_background.jpeg") no-repeat center center fixed;
   // background-size: 100% 100%;
   // background-repeat: no-repeat;
   background-color: #FFF;
 }
-
 
 .plus-info-view { 
   .modal-header {
@@ -75,7 +81,7 @@ $primary-headings: #62843A;
     p a:hover {
       color: $primary-hover;
       opacity: 0.8;
-    }
+      }
   }
   .modal-footer {
     button {
@@ -89,8 +95,35 @@ $primary-headings: #62843A;
 }
 
 
+.shopping-list-view {
+  .table-container {
+  width: 300px;
+  // table {
+    th {
+      border: $primary-color;
+    }
+    td {
+      border: $primary-color;
+    }
+    tr {
+      border: $primary-color;
+    }
+
+
+  //   table td {
+  //     color: $primary-headings;
+  //   }
+  //   table tr {
+  //     color: $primary-headings;
+  //   }
+  // }
+  }
+
+}
+
 //NAVBAR
 //----------------------------
+
 .navbar-view.navbar {
   color: $primary-color;
 }
@@ -105,6 +138,7 @@ $primary-headings: #62843A;
 
 //FOOTER
 //----------------------------
+
 .footer-view {
   .copyright {
       color: white;
