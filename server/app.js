@@ -2,15 +2,17 @@ const express = require('express')
 const router = express.Router()
 const path = require('path')
 const bodyParser = require('body-parser')
-// const mongoose = require('mongoose')
+const mongoose = require('mongoose')
 
 const app = express()
 
 if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
+
+const dbUrl = process.env.DB_URL
 const PORT = process.env.PORT
 
-// mongoose.promise = Promise
-// mongoose.connect(dbUrl)
+mongoose.promise = Promise
+mongoose.connect(dbUrl)
 
 app.use(express.static('client/public'))
 

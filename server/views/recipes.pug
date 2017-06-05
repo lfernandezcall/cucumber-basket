@@ -7,9 +7,11 @@ block content
         .thumbnail.thumbnail-recipes
           img(src='img/rice_with_prawns.jpg')
           .caption
-            h3 Rice with prawns
+            h3 Here we have the recipes!!!
+            each recipe in data
+              p #{recipe.title}
             p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+              | Lorem viva ipsum dolor sit amet, consectetur  vivaadipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam viva!
             p
               a.btn.btn-default.btn-xs(href='#', role='button') Select
               button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
