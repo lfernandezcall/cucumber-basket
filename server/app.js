@@ -14,7 +14,7 @@ const PORT = process.env.PORT
 mongoose.promise = Promise
 mongoose.connect(dbUrl)
 
-app.use(express.static('client/public'))
+app.use(express.static('client'))
 
 app.set('view engine', 'pug')
 app.set('views', path.join(__dirname, 'views'))

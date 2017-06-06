@@ -11,6 +11,7 @@ block content
               h3= recipe.title
               p
                 | #{recipe.description}
+                br
                 a.btn.btn-default.btn-xs(href='#', role='button') Select
                 button.modal-btn.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal_' + recipe._id) + info
               include includes/modal
