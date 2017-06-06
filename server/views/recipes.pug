@@ -3,151 +3,149 @@ extends home
 block content
   div.recipes-view.container
     .container
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/rice_with_prawns.jpg')
-          .caption
-            h3 Here we have the recipes!!!
-            each recipe in data
-              p #{recipe.title}
-            p
-              | Lorem viva ipsum dolor sit amet, consectetur  vivaadipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam viva!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      each recipe in data
+        .col-xs-12.col-sm-6.col-md-4
+          .thumbnail.thumbnail-recipes
+            img(src=recipe.recipeImg)
+            .caption
+              h3 #{recipe.title}
+              p
+                | #{recipe.description}
+                a.btn.btn-default.btn-xs(href='#', role='button') Select
+                button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+                a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/zuchinni_with_sausage.jpg')
-          .caption
-            h3 Zuchinni with sausage
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/zuchinni_with_sausage.jpg')
+      //-     .caption
+      //-       h3 Zuchinni with sausage
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/lentil_salad.jpg')
-          .caption
-            h3 Lentils salad
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/lentil_salad.jpg')
+      //-     .caption
+      //-       h3 Lentils salad
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/fall_sandwich.jpg')
-          .caption
-            h3 Fall sandwich
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/fall_sandwich.jpg')
+      //-     .caption
+      //-       h3 Fall sandwich
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/chicken_wings.jpg')
-          .caption
-            h3 Chicken wings
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/chicken_wings.jpg')
+      //-     .caption
+      //-       h3 Chicken wings
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/italian_rooasted_beef.jpg')
-          .caption
-            h3 Italian rooasted beef
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/italian_rooasted_beef.jpg')
+      //-     .caption
+      //-       h3 Italian rooasted beef
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/rice_with_prawns.jpg')
-          .caption
-            h3 Rice with prawns
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/rice_with_prawns.jpg')
+      //-     .caption
+      //-       h3 Rice with prawns
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/zuchinni_with_sausage.jpg')
-          .caption
-            h3 Zuchinni with sausage
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/zuchinni_with_sausage.jpg')
+      //-     .caption
+      //-       h3 Zuchinni with sausage
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/lentil_salad.jpg')
-          .caption
-            h3 Lentils salad
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/lentil_salad.jpg')
+      //-     .caption
+      //-       h3 Lentils salad
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/fall_sandwich.jpg')
-          .caption
-            h3 Fall sandwich
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/fall_sandwich.jpg')
+      //-     .caption
+      //-       h3 Fall sandwich
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/chicken_wings.jpg')
-          .caption
-            h3 Chicken wings
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/chicken_wings.jpg')
+      //-     .caption
+      //-       h3 Chicken wings
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
-      .col-xs-12.col-sm-6.col-md-4
-        .thumbnail.thumbnail-recipes
-          img(src='img/italian_rooasted_beef.jpg')
-          .caption
-            h3 Italian rooasted beef
-            p
-              | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
-            p
-              a.btn.btn-default.btn-xs(href='#', role='button') Select
-              button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
-              a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
+      //- .col-xs-12.col-sm-6.col-md-4
+      //-   .thumbnail.thumbnail-recipes
+      //-     img(src='img/italian_rooasted_beef.jpg')
+      //-     .caption
+      //-       h3 Italian rooasted beef
+      //-       p
+      //-         | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!
+      //-       p
+      //-         a.btn.btn-default.btn-xs(href='#', role='button') Select
+      //-         button.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+      //-         a.pull-right.fa.fa-shopping-basket.fa-2x(href='/shopping_list', aria-hidden='true')
 
 
 

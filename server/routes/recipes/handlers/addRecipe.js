@@ -1,9 +1,9 @@
 const Recipe = require('../../../models/Recipe')
 
 function addRecipe(req, res) {
-  const { photo, title, directions } = req.body
+  const { recipeImg, title, description } = req.body
 
-  const newRecipe = new Recipe({ photo, title, directions })
+  const newRecipe = new Recipe({ recipeImg, title, description })
 
   newRecipe.save()
     .then( msg => {
