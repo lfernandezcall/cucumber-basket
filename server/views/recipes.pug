@@ -3,44 +3,16 @@ extends home
 block content
   div.recipes-view.container
     .container
-      p #{$id}
-      each recipe in data
+      each recipe, index in data
         .col-xs-12.col-sm-6.col-md-4
           .thumbnail.thumbnail-recipes
             img(src=recipe.recipeImg)
             .caption
-              h3 #{recipe.title}
+              h3= recipe.title
               p
                 | #{recipe.description}
                 a.btn.btn-default.btn-xs(href='#', role='button') Select
-                input(value=recipe.id, name="id")
-                button.modal-btn.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal') + info
+                button.modal-btn.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal_' + recipe._id) + info
+              include includes/modal
 
-  //- MODAL WINDOW
-  //----------------------------------
-  Button trigger modal
-  .container
-    button.btn.btn-primary.btn-md(type='button', data-toggle='modal', data-target='#myModal')
-      | Launch recipe´s info extended
-  //MODAL
-  .plus-info-view#myModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
-    .modal-dialog(role='document')
-      .modal-content
-        .modal-header
-          button.close(type='button', data-dismiss='modal', aria-label='Close')
-            a.fa.fa-times(aria-hidden='true')
-          h4#myModalLabel.modal-title Recipe´s info
 
-        .modal-body
-          .col-xs-12
-            .thumbnail 
-              img(src='img/italian_rooasted_beef.jpg')
-              .caption
-                h3 Italian rooasted beef
-                p
-                  | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illumLorem ipsum dolor sit amet, consectetur adipisicingLorem ipsum dolor sit amet, consectetur adipisicing elit. OptLorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!io, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum! elit. Optio, velit, at! Culpa architecto dolorum id accusamus impedit dolor eius veritatis perferendis omnis vitae? Quas non sunt obcaecati at quisquam illum!!
-                p
-                  a.btn.btn-default.btn-xs(href='#', role='button') Select
-
-          .modal-footer
-            button.btn.btn-primary.btn-xs(type='button', data-dismiss='modal') Close

@@ -1,0 +1,19 @@
+.plus-info-view.modal.fade(id='myModal_' + recipe._id, tabindex='-1', role='dialog', aria-labelledby='myModalLabel')
+  .modal-dialog(role='document')
+    .modal-content
+      .modal-header
+        button.close(type='button', data-dismiss='modal', aria-label='Close')
+          a.fa.fa-times(aria-hidden='true')
+        h4#myModalLabel.modal-title Recipe´s info
+      .modal-body
+        .col-xs-12
+          .thumbnail 
+            img(src=recipe.recipeImg)
+            .caption
+              h3= recipe.title
+              p
+                | #{recipe.description}
+                br
+                a.btn.btn-default.btn-xs(href='#', role='button') Select
+        .modal-footer
+          button.btn.btn-primary.btn-xs(type='button', data-dismiss='modal') Close
