@@ -7,7 +7,9 @@
     "prestart": "npm install",
     "postinstall": "bower install",
     "dev": "nodemon server/app",
-    "start": "node server/app"
+    "start": "node server/app",
+    "build": "browserify src/js/app.js > client/app.js",
+    "build:watch": "watchify -t babelify src/js/app.js -d -o client/app.js -v"
   },
   "keywords": [],
   "author": "",
@@ -20,6 +22,10 @@
     "pug": "^2.0.0-rc.1"
   },
   "devDependencies": {
-    "dotenv": "^4.0.0"
+    "angular": "^1.6.4",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "dotenv": "^4.0.0",
+    "watchify": "^3.9.0"
   }
 }
