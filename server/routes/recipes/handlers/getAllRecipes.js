@@ -1,7 +1,6 @@
-const Recipe = require ('../../../models/Recipe')
+const Recipe = require('../../../models/Recipe')
 
 function getAll (req, res) {
-  console.log('requesting all recipes...')
   Recipe.find()
     .then(data => {
       console.log('Showing all recipes')
@@ -9,5 +8,4 @@ function getAll (req, res) {
     })
 }
 
-
-module.exports =  getAll
+module.exports = getAll

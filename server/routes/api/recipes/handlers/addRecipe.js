@@ -1,12 +1,14 @@
-const Recipe = require('../../../models/Recipe')
+const Recipe = require('../../../../models/Recipe')
 
-// function addRecipe(req, res) {
-//   newRecipe.save()
-//     .then( msg => {
-//         console.log('Succesfully added new recipe')
-//         res.json(msg)
-//     }
-//   )
-// }
+function addRecipe (req, res) {
+  const {recipeImg, title, description} = req.body
+  const newRecipe = new Recipe({recipeImg, title, description})
+  console.log(newRecipe)
+  newRecipe.save()
+    .then(msg => {
+      res.json(msg)
+    }
+  )
+}
 
 module.exports = addRecipe

@@ -1,7 +1,14 @@
-function GetRecipes($scope, ApiService) {
-  ApiService.getAllRecipes()
-    .then(recipes => $scope.recipes = recipes)
-  $scope.name = "Luis Alberto"
+function GetRecipes ($scope, $rootScope, DataService) {
+
+  DataService.getAllRecipes()
+    .then(recipes => $rootScope.recipes = recipes)
+
+  $scope.removeRecipeById = function (id) {
+    DataService.removeRecipeById(id)
+      .then(console.log('recipe was removed succesfully'))
+    DataService.getAllRecipes()
+      .then(recipes => $rootScope.recipes = recipes)
+  }
 }
 
 module.exports = GetRecipes
