@@ -22,9 +22,11 @@
                 <div class="caption">
                   <h3>{{recipe.title}}</h3>
                   <p>{{recipe.description}}</p>
-                  <h6>INGREDIENTS:</h6>
-                  <p>{{recipe.ingredients[0].ingredient}}</p>
-                  <p>{{recipe.ingredients[0].quantity}}</p>
+                  <h6>INGRDIENTS:</h6>
+                  <div ng-repeat="ingredient in recipe.ingredients">
+                    <p>{{ingredient.name}}</p>
+                    <p>{{ingredient.quantity}}</p>
+                  </div>
                   <p><a ng-click="removeRecipeById(recipe._id)" ng-href="#" class="btn btn-danger" role="button">Remove</a> <!-- <a href="#" class="btn btn-default" role="button">Button</a> --></p>
                 </div>
               </div>
@@ -32,21 +34,35 @@
           </div>
         </div>
       </div>
-    <div class="container" ng-controller="AddRecipeController">
-      <form>
+    </div>
+    <div class="container row" ng-controller="AddRecipeController">
+      <div class="col-sm-6">
+        <form>
         Image URL (just enter the name):<br>
         <input type="text" ng-model="recipeImg"><br>
         Title:<br>
         <input type="text" ng-model="title"><br>
         Description:<br>
         <input type="text" ng-model="description"><br>
-        Ingredient:<br>
-        <input type="text" ng-model="ingredient">
-        <br>
-        Quantity:<br>
-        <input type="text" ng-model="quantity"><br>
         <input type="submit" ng-click="addRecipe()" value="Save" />
-      </form>
+        </form>
+      </div>
+      <div class="col-sm-6">
+        Ingredients:<br>
+        <form>
+          Name:<br>
+          <input type="text" ng-model="name">
+          <br>
+          Quantity:<br>
+          <input type="text" ng-model="quantity"><br>
+          <input type="submit" ng-click="addIngredient()" value="Save" />
+        </form>
+      </div>
+      <div>
+        <!-- <ul ng-repeat="ingredient.name in ingredients">
+          <li>{{}}</li> -->
+        </ul>
+      </div>
     </div>
   </div>
   <script src="../app.js" type="text/javascript"></script>

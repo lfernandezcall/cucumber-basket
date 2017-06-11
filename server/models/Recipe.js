@@ -6,7 +6,7 @@ const RecipeSchema = new Schema({
   title: String,
   description: String,
   ingredients: [{
-    ingredient: String,
+    name: String,
     quantity: Number
   }]
 })

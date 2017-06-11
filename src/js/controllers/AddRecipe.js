@@ -1,8 +1,13 @@
-function AddRecipe ($scope, DataService, $rootScope) {
+function AddRecipe ($scope, $rootScope, DataService) {
+  const ingredients = []
+  $scope.addIngredient = function () {
+    const {name, quantity} = $scope
+    ingredients.push({name, quantity})
+    $scope.ingredients = ingredients
+  }
 
   $scope.addRecipe = function () {
-    const {title, recipeImg, description, ingredient, quantity} = $scope
-    const ingredients = {ingredient, quantity}
+    const {title, recipeImg, description, ingredients} = $scope
     DataService.addRecipe({title, recipeImg, description, ingredients})
       .then(console.log(ingredients))
     DataService.getAllRecipes()
