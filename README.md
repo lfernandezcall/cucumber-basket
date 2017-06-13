@@ -1,29 +1,9 @@
-##src
-```
-http://i.imgur.com/8JCqdmm.jpg
-http://i.imgur.com/6mWiYGG.jpg
-http://i.imgur.com/jT9t6WQ.jpg
-http://i.imgur.com/oJ1X4Jk.jpg
-http://i.imgur.com/eA2wj2I.jpg
-http://i.imgur.com/eGIhLQ0.jpg
-http://i.imgur.com/My3a81Z.jpg
-http://i.imgur.com/fgXWvAZ.jpg
-```
+##INSTRUCTIONS
+To install the project in oyur computer is very simple. Only entering _npm install_ the scripts makes everything for you.
+You need to create an _.env_ archive with the **PORT=3000** and the **DB_URL=mongodb://admin:admin100@ds151631.mlab.com:51631/test_skylab**
+To have acces to the remote database.
 
 
-##title
-```
-Zuchinni with sausage
-Lentil salad
-Bacon and ham sandwich
-Rice with prawns
-Fall sandwich
-Chicken wings
-Bacon and chips
-Italian rooasted beef
-```
-
-#description
-```
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique veritatis at labore recusandae doloremque consequuntur ad repudiandae distinctio eum cupiditate. Inventore vitae harum est illo, numquam consequuntur porro tenetur, eaque?
-```
+To start with the project in development mode you must "start" the server whit _mongod --dbpath ~/data/db_, after "run" the aplication (_nodemon server/app_).
+After that we need to _build_ the _app.js_, you must enter by console: _build:js_ (it is make the app) and _build:js:watch_ (to "listen the changes in the code").
+Also you must "start" the server whit _mongod --dbpath ~/data/db_
