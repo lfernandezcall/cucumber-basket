@@ -1,0 +1,17 @@
+//FOOTER
+//----------------------------
+
+.footer-view {
+  // position: relative;
+  //Overwriting Bootstrap settings
+  //________
+  // margin-bottom: 0px;
+  // position: fixed;
+  //________
+  .copyright {
+      color: white;
+  }
+  a {
+    color: $primary-color
+  }
+}

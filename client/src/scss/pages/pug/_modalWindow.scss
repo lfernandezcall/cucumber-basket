@@ -1,0 +1,40 @@
+  //MODAL WINDOW
+  //----------------------------
+
+.plus-info-view { 
+  .thumbnail {
+  box-shadow: 3px -1px 23px 0px rgba(0,0,0,0.15);
+  padding: 0;
+  border: 0;
+  }
+  .modal-header {
+    h4 {
+      color: $primary-headings;
+    }
+    a {
+        color: #333333;
+      }
+    a:hover {
+      color: $primary-hover;
+      opacity: 0.8;
+    }
+  }
+  .modal-body  {
+    h3 {
+      color: $primary-headings;
+    }
+    p a:hover {
+      color: $primary-hover;
+      opacity: 0.8;
+      }
+  }
+  .modal-footer {
+    button {
+      background-color: #333333;
+    }
+    button:hover {
+      background-color: $primary-hover;
+      opacity: 0.8;
+    }
+  }
+}

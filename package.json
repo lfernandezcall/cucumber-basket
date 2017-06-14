@@ -9,7 +9,9 @@
     "dev": "nodemon server/app",
     "start": "node server/app",
     "build": "browserify client/src/js/app.js > client/public/app.js",
-    "build:watch": "watchify -t babelify client/src/js/app.js -d -o client/public/app.js -v"
+    "build:watch": "watchify -t babelify client/src/js/app.js -d -o client/public/app.js -v",
+    "build:scss": "node-sass client/src/scss/styles.scss client/public/styles.css",
+    "build:scss:watch": "node-sass  client/src/scss/styles.scss client/public/styles.css --watch"
   },
   "keywords": [],
   "author": "",

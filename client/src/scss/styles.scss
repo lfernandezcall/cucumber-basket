@@ -1,0 +1,14 @@
+//PRIMARY COLORS
+//----------------------------
+$primary-color: #A2CA67;
+$primary-hover: #70A728;
+$primary-headings: #62843A;
+
+@import 'pages/pug/_recipes';
+@import 'pages/pug/_modalWindow';
+@import 'pages/pug/_home';
+@import 'pages/pug/_shoppingList';
+@import 'pages/pug/_navbar';
+@import 'pages/angular/_index';
+@import 'pages/angular/_showRecipes';
+

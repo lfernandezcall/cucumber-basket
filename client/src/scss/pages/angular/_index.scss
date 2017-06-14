@@ -1,0 +1,12 @@
+.index-view {
+  // background: black;
+  .background-img {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    opacity : 0.1;
+    background-image: url("/img/bacon_and_chips.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}

@@ -1,0 +1,22 @@
+
+//NAVBAR
+//----------------------------
+
+.navbar-view.navbar {
+  color: $primary-color;
+}
+.navbar-brand {
+  background-color: $primary-color;
+}
+.navbar-brand:hover {
+  background-color: $primary-hover;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s;
+}
+//Overwriting Bootstrap settings
+//________
+// .navbar .navbar-default {
+//   margin-top: 0px;
+//   position: fixed;
+//  }
+//________
