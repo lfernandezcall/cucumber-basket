@@ -1,4 +1,4 @@
-function AddRecipe ($scope, $rootScope, DataService) {
+function AddRecipeController ($scope, $rootScope, DataService) {
   const ingredients = []
   $scope.addIngredient = function () {
     const {name, quantity} = $scope
@@ -8,11 +8,12 @@ function AddRecipe ($scope, $rootScope, DataService) {
 
   $scope.addRecipe = function () {
     const {title, recipeImg, description, ingredients} = $scope
+    console.log({title, recipeImg, description, ingredients})
     DataService.addRecipe({title, recipeImg, description, ingredients})
-      .then(console.log(ingredients))
-    DataService.getAllRecipes()
-      .then(recipes => $rootScope.recipes = recipes)
+      .then(console.log('Sending data.....'))
+    // DataService.getAllRecipes()
+    //   .then(recipes => $rootScope.recipes = recipes)
   }
 }
 
-module.exports = AddRecipe
+module.exports = AddRecipeController

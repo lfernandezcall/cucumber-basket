@@ -1,0 +1,43 @@
+<div class="editCollection-view">
+<!--   <div class="container">
+    <p><a href="#!/addRecipe" class="btn btn-default btn-xs active" role="button">Add Recipe</a></p>
+  </div> -->
+  <div class="container">
+    <div class="row">
+      <div ng-repeat="recipe in recipes">
+        <div  class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img class="img-rounded" ng-src="{{recipe.recipeImg}}">
+            <div class="caption">
+              <h3>{{recipe.title}}</h3>
+              <p>{{recipe.description}}</p>
+              <h6>INGREDIENTS:</h6>
+              <div ng-repeat="ingredient in recipe.ingredients">
+                <p>{{ingredient.name}}</p>
+                <p>{{ingredient.quantity}}</p>
+              </div>
+              <p><a ng-click="removeRecipeById(recipe._id)" class="btn btn-danger btn-xs" role="button">Remove</a>
+              <p><a ng-click="selectedRecipeToEdit(recipe._id)" ng-href="#!/editRecipe" class="btn btn-primary btn-xs" role="button">Edit</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- <div><a href="#!/add" class="btn btn-primary">Add Pizza</a></div> -->
+
+<!-- <table ng-table="tableParams" class="table table-condensed table-bordered table-striped">
+  <tr ng-repeat="row in $data">
+    <td data-title="'Image'">
+      <img width="50" ng-src="{{row.recipeImg}}" alt="" />
+    </td>
+    <td data-title="'ID'" sortable="'_id'">{{row._id}}</td>
+    <td data-title="'Name'" sortable="'name'">{{row.title}}</td>
+    <td data-title="'Description'" sortable="'description'">{{row.description}}</td> -->
+    <!-- <td data-title="'Actions'"><a class="btn btn-danger" role="button" ng-click="removePizza(row._id)">Remove</a></td> -->
+
+<!--   </tr>
+</table> -->

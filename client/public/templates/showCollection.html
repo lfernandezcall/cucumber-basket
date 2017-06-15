@@ -1,0 +1,23 @@
+<div class="showCollection-view">
+  <div class="container">
+    <div class="row">
+      <div ng-repeat="recipe in recipes">
+        <div  class="col-sm-6 col-md-4">
+          <div class="thumbnail">
+            <img ng-src="{{recipe.recipeImg}}">
+            <div class="caption">
+              <h3>{{recipe.title}}</h3>
+              <p>{{recipe.description}}</p>
+              <h6>INGREDIENTS:</h6>
+              <div ng-repeat="ingredient in recipe.ingredients">
+                <p>{{ingredient.name}}</p>
+                <p>{{ingredient.quantity}}</p>
+              </div>
+              <!-- <p><a ng-click="removeRecipeById(recipe._id)" ng-href="#" class="btn btn-danger" role="button">Remove</a>  --><!-- <a href="#" class="btn btn-default" role="button">Button</a> --><!-- </p> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

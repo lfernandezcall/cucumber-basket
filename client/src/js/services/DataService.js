@@ -7,13 +7,16 @@ function DataService ($http) {
     return $http.post('/api/recipes', data)
   }
   function removeRecipeById (id) {
-    console.log(id)
     return $http.delete('/api/recipes/' + id)
+  }
+  function editRecipeById (id, data) {
+    return $http.put('/api/recipes/' + id, data)
   }
   return {
     getAllRecipes: getAllRecipes,
     addRecipe: addRecipe,
-    removeRecipeById: removeRecipeById
+    removeRecipeById: removeRecipeById,
+    editRecipeById: editRecipeById
   }
 }
 

@@ -1,7 +1,7 @@
 function configRoutes ($routeProvider) {
   $routeProvider
     .when('/', {
-      templateUrl: 'templates/showRecipes.html',
+      templateUrl: '/templates/showCollection.html',
       controller: 'CollectionController'
     })
 }

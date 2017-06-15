@@ -1,138 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,700italic,400,300,700");
-.recipes-view .thumbnail {
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
-  padding: 0;
-  border: 0; }
-
-.recipes-view .container {
-  display: flex;
-  flex-wrap: wrap; }
-
-.recipes-view .thumbnail-recipes {
-  max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
-  .recipes-view .thumbnail-recipes h3 {
-    color: #62843A; }
-  .recipes-view .thumbnail-recipes p button {
-    background-color: #333333; }
-  .recipes-view .thumbnail-recipes p button:hover {
-    background-color: #70A728;
-    opacity: 0.8; }
-  .recipes-view .thumbnail-recipes p a {
-    color: #333333; }
-  .recipes-view .thumbnail-recipes p a:hover {
-    color: #70A728;
-    opacity: 0.8; }
-  .recipes-view .thumbnail-recipes p a.fa {
-    margin-top: -3px; }
-
-.plus-info-view .thumbnail {
-  box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15);
-  padding: 0;
-  border: 0; }
-
-.plus-info-view .modal-header h4 {
-  color: #62843A; }
-
-.plus-info-view .modal-header a {
-  color: #333333; }
-
-.plus-info-view .modal-header a:hover {
-  color: #70A728;
-  opacity: 0.8; }
-
-.plus-info-view .modal-body h3 {
-  color: #62843A; }
-
-.plus-info-view .modal-body p a:hover {
-  color: #70A728;
-  opacity: 0.8; }
-
-.plus-info-view .modal-footer button {
-  background-color: #333333; }
-
-.plus-info-view .modal-footer button:hover {
-  background-color: #70A728;
-  opacity: 0.8; }
-
-.background-img {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  opacity: 0.1;
-  background-image: url("/img/bacon_and_chips.jpg");
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.home-view .thumbnail {
-  box-shadow: 3px -1px 40px 0px rgba(0, 0, 0, 0.15);
-  padding: 0;
-  border: 0; }
-
-.jumbotron {
-  background: none; }
-  .jumbotron p {
-    background: none; }
-
-.shopping-list-view .thumbnail {
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
-  padding: 0;
-  border: 0; }
-
-.shopping-list-view .table-container {
-  max-width: 400px;
-  background: #FFF;
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
-
-.navbar-view.navbar {
-  color: #A2CA67; }
-
-.navbar-brand {
-  background-color: #A2CA67; }
-
-.navbar-brand:hover {
-  background-color: #70A728;
-  letter-spacing: 1px;
-  transition: all 0.3s ease 0s; }
-
-.index-view .background-img {
-  position: fixed;
-  height: 100%;
-  width: 100%;
-  opacity: 0.1;
-  background-image: url("/img/bacon_and_chips.jpg");
-  background-repeat: no-repeat;
-  background-position: center; }
-
-.showRecipes-view .thumbnail {
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
-  padding: 0;
-  border: 0; }
-
-.showRecipes-view .container {
-  display: flex;
-  flex-wrap: wrap; }
-
-.showRecipes-view .thumbnail-recipes {
-  max-width: 400px;
-  margin: 20px auto;
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
-  .showRecipes-view .thumbnail-recipes h3 {
-    color: #62843A; }
-  .showRecipes-view .thumbnail-recipes p button {
-    background-color: #333333; }
-  .showRecipes-view .thumbnail-recipes p button:hover {
-    background-color: #70A728;
-    opacity: 0.8; }
-  .showRecipes-view .thumbnail-recipes p a {
-    color: #333333; }
-  .showRecipes-view .thumbnail-recipes p a:hover {
-    color: #70A728;
-    opacity: 0.8; }
-  .showRecipes-view .thumbnail-recipes p a.fa {
-    margin-top: -3px; }
-
 /*!
  * bootswatch v3.3.7
  * Homepage: http://bootswatch.com
@@ -6879,3 +6745,137 @@ input[type="checkbox"] {
 
 .modal .close {
   color: #222222; }
+
+.recipes-view .thumbnail {
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
+
+.recipes-view .container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.recipes-view .thumbnail-recipes {
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
+  .recipes-view .thumbnail-recipes h3 {
+    color: #62843A; }
+  .recipes-view .thumbnail-recipes p button {
+    background-color: #333333; }
+  .recipes-view .thumbnail-recipes p button:hover {
+    background-color: #70A728;
+    opacity: 0.8; }
+  .recipes-view .thumbnail-recipes p a {
+    color: #333333; }
+  .recipes-view .thumbnail-recipes p a:hover {
+    color: #70A728;
+    opacity: 0.8; }
+  .recipes-view .thumbnail-recipes p a.fa {
+    margin-top: -3px; }
+
+.plus-info-view .thumbnail {
+  box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
+
+.plus-info-view .modal-header h4 {
+  color: #62843A; }
+
+.plus-info-view .modal-header a {
+  color: #333333; }
+
+.plus-info-view .modal-header a:hover {
+  color: #70A728;
+  opacity: 0.8; }
+
+.plus-info-view .modal-body h3 {
+  color: #62843A; }
+
+.plus-info-view .modal-body p a:hover {
+  color: #70A728;
+  opacity: 0.8; }
+
+.plus-info-view .modal-footer button {
+  background-color: #333333; }
+
+.plus-info-view .modal-footer button:hover {
+  background-color: #70A728;
+  opacity: 0.8; }
+
+.background-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  background-image: url("/img/bacon_and_chips.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.home-view .thumbnail {
+  box-shadow: 3px -1px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
+
+.jumbotron {
+  background: none; }
+  .jumbotron p {
+    background: none; }
+
+.shopping-list-view .thumbnail {
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
+
+.shopping-list-view .table-container {
+  max-width: 400px;
+  background: #FFF;
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
+
+.navbar-view.navbar {
+  color: #A2CA67; }
+
+.navbar-brand {
+  background-color: #A2CA67; }
+
+.navbar-brand:hover {
+  background-color: #70A728;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s; }
+
+.index-view .background-img {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  opacity: 0.1;
+  background-image: url("/img/bacon_and_chips.jpg");
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.showCollection-view .thumbnail {
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
+
+.showCollection-view .container {
+  display: flex;
+  flex-wrap: wrap; }
+
+.showCollection-view .thumbnail-recipes {
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
+  .showCollection-view .thumbnail-recipes h3 {
+    color: #62843A; }
+  .showCollection-view .thumbnail-recipes p button {
+    background-color: #333333; }
+  .showCollection-view .thumbnail-recipes p button:hover {
+    background-color: #70A728;
+    opacity: 0.8; }
+  .showCollection-view .thumbnail-recipes p a {
+    color: #333333; }
+  .showCollection-view .thumbnail-recipes p a:hover {
+    color: #70A728;
+    opacity: 0.8; }
+  .showCollection-view .thumbnail-recipes p a.fa {
+    margin-top: -3px; }

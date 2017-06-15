@@ -1,12 +1,31 @@
 const angular = require('angular')
 const angularRoute = require('angular-route')
-const angularTable = require('ng-table')
+// const angularTable = require('ng-table')
 
-const configRouteCollection = require('./collection')
-const CollectionController = require('./collection/CollectionController')
+const configRouteShowCollection = require('./showCollection')
+const CollectionController = require('./showCollection/CollectionController')
 
-angular.module('adminCollectionRoutes', [ angularRoute, 'ngTable' ])
+const configRouteAddrecipe = require('./addRecipe')
+const AddRecipeController = require('./addRecipe/AddRecipeController')
+
+const configRouteEditCollection = require('./editCollection')
+const EditCollectionController = require('./editCollection/EditCollectionController')
+
+const configRouteEditRecipe = require('./editRecipe')
+const EditRecipeController = require('./editRecipe/EditRecipeController')
+
+angular.module('adminCollectionRoutes', [ angularRoute ])
+
   .controller('CollectionController', CollectionController)
-  .config(configRouteCollection)
+  .config(configRouteShowCollection)
+
+  .controller('AddRecipeController', AddRecipeController)
+  .config(configRouteAddrecipe)
+
+  .controller('EditCollectionController', EditCollectionController)
+  .config(configRouteEditCollection)
+
+  .controller('EditRecipeController', EditRecipeController)
+  .config(configRouteEditRecipe)
 
 module.exports = 'adminCollectionRoutes'
