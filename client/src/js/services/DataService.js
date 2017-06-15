@@ -1,8 +1,15 @@
 function DataService ($http) {
+
   function getAllRecipes () {
     return $http.get('/api/recipes')
       .then(response => response.data)
   }
+
+  function getSingleRecipe (id) {
+    return $http.get('/api/recipe/' + id)
+      .then(response => response.data)
+  }
+
   function addRecipe (data) {
     return $http.post('/api/recipes', data)
   }
@@ -12,12 +19,8 @@ function DataService ($http) {
   function editRecipeById (id, data) {
     return $http.put('/api/recipes/' + id, data)
   }
-  return {
-    getAllRecipes: getAllRecipes,
-    addRecipe: addRecipe,
-    removeRecipeById: removeRecipeById,
-    editRecipeById: editRecipeById
-  }
+
+  return { getAllRecipes, addRecipe, removeRecipeById, editRecipeById, getSingleRecipe }
 }
 
 module.exports = DataService

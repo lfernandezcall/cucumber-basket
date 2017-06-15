@@ -8,8 +8,8 @@
     "postinstall": "bower install",
     "dev": "nodemon server/app",
     "start": "node server/app",
-    "build": "browserify client/src/js/app.js > client/public/app.js",
-    "build:watch": "watchify -t babelify client/src/js/app.js -d -o client/public/app.js -v",
+    "build:js": "browserify -t brfs client/src/js/app.js > client/public/admin/app.js",
+    "build:js:watch": "watchify -t babelify -t brfs client/src/js/app.js -d -o client/public/admin/app.js -v",
     "build:scss": "node-sass client/src/scss/styles.scss client/public/styles.css",
     "build:scss:watch": "node-sass  client/src/scss/styles.scss client/public/styles.css --watch"
   },
@@ -30,6 +30,7 @@
     "angular-route": "^1.6.4",
     "angular-toastr": "^2.1.1",
     "babelify": "^7.3.0",
+    "brfs": "^1.4.3",
     "browserify": "^14.4.0",
     "cheerio": "^1.0.0-rc.1",
     "dotenv": "^4.0.0",

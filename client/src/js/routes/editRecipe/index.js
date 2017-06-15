@@ -1,7 +1,11 @@
+var fs = require('fs');
+var htmlEditRecipe = fs.readFileSync(__dirname + '/template.html', 'utf8');
+
+
 function configRoutes ($routeProvider) {
   $routeProvider
-    .when('/editRecipe', {
-      templateUrl: '/templates/editRecipe.html',
+    .when('/editRecipe/:id', {
+      template: htmlEditRecipe,
       controller: 'EditRecipeController'
     })
 }

@@ -1,15 +1,35 @@
-function EditRecipeController ($scope, $rootScope, DataService) {
-  const ID = $scope.selectedId
+function EditRecipeController ($scope, $rootScope, $routeParams, DataService) {
+
+  const ID = $routeParams.id
+  DataService.getSingleRecipe(ID)
+  	.then( recipe => {
+
+			const {recipeImg, title, description, } = recipe
+			$scope.title = title
+			$scope.description= description
+			$scope.recipeImg= recipe.recipeImg
+			$scope.ingredients = recipe.ingredients
+
+  	})
+
+  $scope.EditRecipe = function() {
+
+		const {recipeImg, title, description, ingredients} = $scope
+		const data = {recipeImg, title, description, ingredients}
+		DataService.editRecipeById( ID, data )
+			.then( () => console.log("data updated!!") )
+
+  }
   console.log(ID)
 
-  $scope.saveRecipeChanges = function () {
-    const {name} = $scope
-    console.log({name})
-    console.log('This is the &rootScope ID.... ' + $scope.selectedId)
+  // $scope.saveRecipeChanges = function () {
+  //   const {name} = $scope
+  //   console.log({name})
+  //   console.log('This is the &rootScope ID.... ' + $scope.selectedId)
 
-    // DataService.editRecipeById(id, {title, recipeImg, description, ingredients})
-    //     .then(console.log(`Sending data to the server to store the data.... `))
-  }
+  //   // DataService.editRecipeById(id, {title, recipeImg, description, ingredients})
+  //   //     .then(console.log(`Sending data to the server to store the data.... `))
+  // }
 }
 
 module.exports = EditRecipeController
