@@ -1,19 +1,19 @@
-function EditRecipeController ($scope, $rootScope, $routeParams, DataService) {
+function EditRecipeController ($scope, $rootScope, $location, $routeParams, DataService) {
   const ID = $routeParams.id
   DataService.getSingleRecipe(ID)
     .then(recipe => {
       const {recipeImg, title, description } = recipe
       $scope.title = title
       $scope.description = description
-      $scope.recipeImg = recipe.recipeImg
-      $scope.ingredients = recipe.ingredients
+      $scope.recipeImg = recipeImg
+      $scope.ingredients = ingredients
     })
 
   $scope.EditRecipe = function () {
     const {recipeImg, title, description, ingredients} = $scope
     const data = {recipeImg, title, description, ingredients}
     DataService.editRecipeById(ID, data)
-      .then(() => console.log('data updated!!'))
+      .then(() => $location.path('/editCollection'))
   }
 }
 
