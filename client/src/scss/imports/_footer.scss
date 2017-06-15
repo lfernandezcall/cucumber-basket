@@ -1,0 +1,31 @@
+.footer-view {
+  .copyright {
+      color: white;
+  }
+  a {
+    color: $primary-color
+  }
+// .navbar {
+//   font-size: 13px;
+//   font-weight: 300;
+// }
+}
+.footer-view {
+	color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background: #333333;
+  margin-bottom: 0;
+}
+
+li.admin a, li.admin:hover a, .navbar.admin {
+	background: red !important;
+	color: white !important;
+}
+
+.ingredient-panel {
+	margin: 30px;
+}

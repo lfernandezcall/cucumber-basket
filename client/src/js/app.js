@@ -9,4 +9,4 @@ const DataService = require('./services/DataService')
 
 angular.module('adminCollection', [ routesApp, ngAnimate, toastr ])
   .factory('DataService', DataService)
-  .run( runAtBegin )
+  .run(runAtBegin)

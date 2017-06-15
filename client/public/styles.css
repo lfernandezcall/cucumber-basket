@@ -6832,17 +6832,6 @@ input[type="checkbox"] {
   background: #FFF;
   box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
 
-.navbar-view.navbar {
-  color: #A2CA67; }
-
-.navbar-brand {
-  background-color: #A2CA67; }
-
-.navbar-brand:hover {
-  background-color: #70A728;
-  letter-spacing: 1px;
-  transition: all 0.3s ease 0s; }
-
 .index-view .background-img {
   position: fixed;
   height: 100%;
@@ -6867,11 +6856,6 @@ input[type="checkbox"] {
   box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
   .showCollection-view .thumbnail-recipes h3 {
     color: #62843A; }
-  .showCollection-view .thumbnail-recipes p button {
-    background-color: #333333; }
-  .showCollection-view .thumbnail-recipes p button:hover {
-    background-color: #70A728;
-    opacity: 0.8; }
   .showCollection-view .thumbnail-recipes p a {
     color: #333333; }
   .showCollection-view .thumbnail-recipes p a:hover {
@@ -6880,13 +6864,46 @@ input[type="checkbox"] {
   .showCollection-view .thumbnail-recipes p a.fa {
     margin-top: -3px; }
 
-html {
-  position: relative;
-  min-height: 100%; }
+.editCollection-view .container {
+  display: flex;
+  flex-wrap: wrap; }
 
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px; }
+.editCollection-view .thumbnail-recipes {
+  max-width: 400px;
+  margin: 20px auto;
+  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  border: 0; }
+  .editCollection-view .thumbnail-recipes h3 {
+    color: #62843A; }
+  .editCollection-view .thumbnail-recipes p a .edit {
+    width: 80px;
+    background: #62843A; }
+  .editCollection-view .thumbnail-recipes p a:hover.edit {
+    color: #70A728;
+    opacity: 0.2; }
+  .editCollection-view .thumbnail-recipes p a {
+    width: 80px; }
+  .editCollection-view .thumbnail-recipes p a:hover {
+    color: #70A728;
+    opacity: 0.2; }
+
+.navbar-view.navbar {
+  color: #A2CA67; }
+
+.navbar-brand {
+  background-color: #A2CA67; }
+
+.navbar-brand:hover {
+  background-color: #70A728;
+  letter-spacing: 1px;
+  transition: all 0.3s ease 0s; }
+
+.footer-view .copyright {
+  color: white; }
+
+.footer-view a {
+  color: #A2CA67; }
 
 .footer-view {
   color: white;
@@ -6895,7 +6912,8 @@ body {
   width: 100%;
   /* Set the fixed height of the footer here */
   height: 60px;
-  background: #333333; }
+  background: #333333;
+  margin-bottom: 0; }
 
 li.admin a, li.admin:hover a, .navbar.admin {
   background: red !important;
@@ -6903,3 +6921,11 @@ li.admin a, li.admin:hover a, .navbar.admin {
 
 .ingredient-panel {
   margin: 30px; }
+
+html {
+  position: relative;
+  min-height: 100%; }
+
+body {
+  /* Margin bottom by footer height */
+  margin-bottom: 80px; }

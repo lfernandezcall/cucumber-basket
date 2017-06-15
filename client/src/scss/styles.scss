@@ -1,48 +1,23 @@
 //PRIMARY COLORS
-//----------------------------
 $primary-color: #A2CA67;
 $primary-hover: #70A728;
 $primary-headings: #62843A;
 
 
 //IMPORTS
-//----------------------------
-@import 'libs/bootswatchYeti';
-@import 'pages/pug/_recipes';
-@import 'pages/pug/_modalWindow';
-@import 'pages/pug/_home';
-@import 'pages/pug/_shoppingList';
-@import 'pages/pug/_navbar';
-@import 'pages/angular/_index';
-@import 'pages/angular/_showCollection';
+@import 'libs/_bootswatchYeti';
+@import 'imports/pug/_recipes';
+@import 'imports/pug/_modalWindow';
+@import 'imports/pug/_home';
+@import 'imports/pug/_shoppingList';
+@import 'imports/angular/_index';
+@import 'imports/angular/_showCollection';
+@import 'imports/angular/_editCollection';
+@import 'imports/_navbar';
+@import 'imports/_footer';
+@import 'imports/_html-body';
 
-html {
-  position: relative;
-  min-height: 100%;
-}
-body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px;
-}
 
-.footer-view {
-	color: white;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  /* Set the fixed height of the footer here */
-  height: 60px;
-  background: #333333
-}
-
-li.admin a, li.admin:hover a, .navbar.admin {
-	background: red !important;
-	color: white !important;
-}
-
-.ingredient-panel {
-	margin: 30px;
-}
 
 
 

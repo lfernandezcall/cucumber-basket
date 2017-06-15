@@ -1,13 +1,6 @@
-function CollectionController ($scope, $rootScope, DataService) {
+function CollectionController ($scope, $rootScope, $location, DataService) {
   DataService.getAllRecipes()
-    .then(recipes => $rootScope.recipes = recipes)
-
-  $scope.removeRecipeById = function (id) {
-    DataService.removeRecipeById(id)
-      .then(console.log('recipe was removed succesfully'))
-    DataService.getAllRecipes()
-      .then(recipes => $rootScope.recipes = recipes)
-  }
+    .then(recipes => $location.path('/editCollection'))
 }
 
 module.exports = CollectionController

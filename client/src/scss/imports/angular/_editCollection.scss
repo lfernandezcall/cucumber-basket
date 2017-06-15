@@ -1,0 +1,33 @@
+.editCollection-view {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .thumbnail-recipes {
+    max-width: 400px;
+    margin: 20px auto;
+    box-shadow: 3px 3px 40px 0px rgba(0,0,0,0.15);
+    padding: 0;
+    border: 0;
+    h3 {
+      color: $primary-headings;
+    }
+    p {
+      a .edit{
+        width: 80px;
+        background: $primary-headings; 
+      }
+      a:hover.edit {
+        color: $primary-hover;
+        opacity: 0.2;
+      }
+      a {
+        width: 80px;
+      }
+      a:hover {
+        color: $primary-hover;
+        opacity: 0.2;
+      }
+    }
+  }
+}

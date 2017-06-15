@@ -1,7 +1,7 @@
 extends home
 
 block content
-  div.recipes-view.container
+  div.recipes-view
     .container
       each recipe, index in data
         .col-xs-12.col-sm-6.col-md-4
@@ -12,7 +12,6 @@ block content
               p
                 | #{recipe.description}
                 br
-                a.btn.btn-default.btn-xs(href='#', role='button') Select
                 button.modal-btn.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal_' + recipe._id) + info
               include includes/modal
 
