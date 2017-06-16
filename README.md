@@ -4,7 +4,7 @@
 [![ES6](https://github.com/Iggy-Codes/logo-images/blob/master/logos/es6.png)](http://www.ecma-international.org/ecma-262/6.0/)
 [![Bootstrap](https://github.com/Iggy-Codes/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/)
 [![Bower](https://github.com/Iggy-Codes/logo-images/blob/master/logos/bower.png)](http://bower.io/)
-![NodeJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
+[!NodeJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
 [![npm](https://github.com/Iggy-Codes/logo-images/blob/master/logos/npm.png)](https://www.npmjs.com/)
 [![MongoDB](https://github.com/Iggy-Codes/logo-images/blob/master/logos/mongodb.png)](https://www.mongodb.com/)
 [![ExpressJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/expressjs.png)](http://www.expressjs.com/)
@@ -15,7 +15,7 @@
 # Cucumber Basket
 This repo contains full-stack MEAN project created for managing a library of recipes.
 
-!(http://imgur.com/a/ww5uQ)
+[![screenshot](http://imgur.com/a/ww5uQ)]
 
 ## INSTRUCTIONS
 
