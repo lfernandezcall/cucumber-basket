@@ -9,7 +9,7 @@
 [![ExpressJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/expressjs.png)](http://www.expressjs.com/)
 [![PugJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/pug.png)](http://www.pugjs.org/)
 [![Skylab](https://github.com/Iggy-Codes/logo-images/blob/master/logos/skylab-56.png)](http://www.skylabcoders.com/)
-[![Standard - JavaScript Style Guide](https://github.com/Iggy-Codes/logo-images/blob/master/logos/js-standard.png)]
+![Standard - JavaScript Style Guide](https://github.com/Iggy-Codes/logo-images/blob/master/logos/js-standard.png)
 
 (https://github.com/feross/standard)
 
