@@ -13,6 +13,16 @@
               h3= recipe.title
               p
                 | #{recipe.description}
-                br
+              br
+              h5 INGREDIENTS
+              table
+                tbody
+                  each ingredient, i in recipe.ingredients
+                    tr
+                      td
+                        h5= ingredient.name
+                      td
+                        h5= ingredient.quantity
+                          | gr
         .modal-footer
           button.btn.btn-primary.btn-xs(type='button', data-dismiss='modal') Close
