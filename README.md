@@ -10,13 +10,13 @@
 [![PugJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/pug.png)](http://www.pugjs.org/)
 [![Skylab](https://github.com/Iggy-Codes/logo-images/blob/master/logos/skylab-56.png)](http://www.skylabcoders.com/)
 ![Standard - JavaScript Style Guide](https://github.com/Iggy-Codes/logo-images/blob/master/logos/js-standard.png)
+[![NodeJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/nodejs.png)](https://nodejs.org/)
 
-(https://github.com/feross/standard)
 
 # Cucumber Basket
 This repo contains full-stack MEAN project created for managing a library of recipes.
 
-[![](http://imgur.com/a/ww5uQ)]
+
 
 ## INSTRUCTIONS
 
