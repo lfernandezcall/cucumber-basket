@@ -15,7 +15,7 @@
 # Cucumber Basket
 This repo contains full-stack MEAN project created for managing a library of recipes.
 
-[![screenshot](http://imgur.com/a/ww5uQ)]
+[![](http://imgur.com/a/ww5uQ)]
 
 ## INSTRUCTIONS
 
