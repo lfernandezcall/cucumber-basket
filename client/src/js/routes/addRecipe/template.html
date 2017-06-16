@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container addRecipe-view">
     <div class="row">
         <div class="col-md-6 col-md-offset-3">
             <form >
@@ -36,11 +36,17 @@
                                             <button class="btn btn-block btn-default" ng-click="addIngredient()">Add Ingredient</button>
                                         </div>
                                         <div class="col-md-6">
-                                        	<ul>
+<!--                                         	<ul>
                                         		<li ng-repeat="ingredient in ingredients">
                                         			{{ingredient.name}} | {{ingredient.quantity}}
                                         		</li>
-                                        	</ul>
+                                        	</ul> -->
+                                            <table>
+                                              <tr ng-repeat="ingredient in ingredients">
+                                                <td>{{ingredient.name}}</td>
+                                                <td>{{ingredient.quantity}}{{ingredient.quantity}}</td>
+                                              </tr>
+                                            </table>
                                         </div>
                                     </div>
                                 </div>

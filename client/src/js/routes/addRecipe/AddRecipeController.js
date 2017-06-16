@@ -5,6 +5,7 @@ function AddRecipeController ($scope, $rootScope, $location, DataService) {
     const {name, quantity} = $scope
     ingredients.push({name, quantity})
     $scope.ingredients = ingredients
+    console.log('Ingredient added')
   }
 
   $scope.addRecipe = function () {

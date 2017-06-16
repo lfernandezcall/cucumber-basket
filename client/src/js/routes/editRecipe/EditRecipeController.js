@@ -2,7 +2,7 @@ function EditRecipeController ($scope, $rootScope, $location, $routeParams, Data
   const ID = $routeParams.id
   DataService.getSingleRecipe(ID)
     .then(recipe => {
-      const {recipeImg, title, description } = recipe
+      const { recipeImg, title, description, ingredients } = recipe
       $scope.title = title
       $scope.description = description
       $scope.recipeImg = recipeImg

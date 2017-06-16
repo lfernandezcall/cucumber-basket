@@ -6912,3 +6912,10 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 80px; }
+
+.addRecipe-view {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4; }
+  .addRecipe-view .panel-primary, .addRecipe-view .addRecipe {
+    box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
