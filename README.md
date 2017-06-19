@@ -15,7 +15,7 @@
 
 # Cucumber Basket
 This repo contains full-stack MEAN project created for managing a library of recipes.
-This project is an _mobile friendly website_, take care of if you want to use it in your desktop.
+This project is a _mobile friendly website_, take care of if you want to use it on your desktop.
 
 
 ## INSTRUCTIONS
