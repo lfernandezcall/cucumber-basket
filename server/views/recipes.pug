@@ -5,13 +5,13 @@ block content
     .container
       each recipe in data
         .col-xs-12.col-sm-6.col-md-4
-          .thumbnail.thumbnail-recipes
+          .thumbnail.thumbnail-recipes 
             img(src=recipe.recipeImg)
-            .caption
-              h3= recipe.title
-              p
-                //- | #{recipe.description}
-                button.modal-btn.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal_' + recipe._id) + info
-              include includes/modal
+            .hover-caption
+              .caption
+                h3= recipe.title
+                p
+                  button.modal-btn.btn.btn-primary.btn-xs(type='button', data-toggle='modal', data-target='#myModal_' + recipe._id) + info
+            include includes/modal
 
 

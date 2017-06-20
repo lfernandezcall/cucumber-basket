@@ -6746,17 +6746,41 @@ input[type="checkbox"] {
 .modal .close {
   color: #222222; }
 
-.recipes-view .thumbnail {
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
-  padding: 0;
-  border: 0; }
+.recipes-view .cover-img {
+  border: solid 1px red !important;
+  width: 300px;
+  height: 200px; }
 
-.recipes-view .container {
-  display: flex;
-  flex-wrap: wrap; }
+.recipes-view .thumbnail {
+  padding: 0;
+  border: 0;
+  width: 300px;
+  overflow: hidden;
+  position: relative;
+  height: 180px; }
+
+.recipes-view .hover-caption {
+  width: 300px;
+  height: 180px;
+  position: absolute;
+  display: none;
+  background: white;
+  opacity: 0.9; }
+
+.recipes-view img:hover + .hover-caption {
+  display: block; }
+
+.recipes-view img {
+  position: absolute;
+  top: -9999px;
+  bottom: -9999px;
+  left: -9999px;
+  right: -9999px;
+  margin: auto; }
 
 .recipes-view .thumbnail-recipes {
-  max-width: 400px;
+  width: 300px;
+  height: 180px;
   margin: 20px auto;
   box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
   .recipes-view .thumbnail-recipes h3 {
