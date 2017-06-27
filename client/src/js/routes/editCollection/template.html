@@ -3,7 +3,9 @@
     <div ng-repeat="recipe in recipes">
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail thumbnail-recipes">
-          <img ng-src="{{recipe.recipeImg}}">
+          <div class="img-background">
+            <img ng-src="{{recipe.recipeImg}}">
+          </div>      
           <div class="caption">
             <h3>{{recipe.title}}</h3>
             <div>{{ recipe.description | limitTo:100}}...</div>

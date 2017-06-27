@@ -6747,13 +6747,8 @@ input[type="checkbox"] {
   color: #222222; }
 
 .recipes-view .thumbnail {
-  box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
   padding: 0;
   border: 0; }
-
-.recipes-view .container {
-  display: flex;
-  flex-wrap: wrap; }
 
 .recipes-view .img-background {
   overflow: hidden;
@@ -6864,6 +6859,20 @@ input[type="checkbox"] {
     opacity: 0.8; }
   .showCollection-view .thumbnail-recipes p a.fa {
     margin-top: -3px; }
+
+.editCollection-view .img-background {
+  overflow: hidden;
+  height: 150px;
+  position: relative;
+  margin: 0 auto; }
+  .editCollection-view .img-background img {
+    width: 100%;
+    position: absolute;
+    margin: auto;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0; }
 
 .editCollection-view .thumbnail-recipes {
   max-width: 400px;
