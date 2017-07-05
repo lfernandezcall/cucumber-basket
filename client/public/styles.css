@@ -6940,5 +6940,12 @@ body {
   font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 15px;
   line-height: 1.4; }
-  .addRecipe-view .panel-primary, .addRecipe-view .addRecipe {
+  .addRecipe-view .panel-primary, .addRecipe-view #addRecipe-button {
+    box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
+
+.editRecipe-view {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 15px;
+  line-height: 1.4; }
+  .editRecipe-view .panel-warning, .editRecipe-view button {
     box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }

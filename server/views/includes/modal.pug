@@ -11,18 +11,17 @@
             img(src=recipe.recipeImg)
             .caption
               h3= recipe.title
-              p
-                | #{recipe.description}
+              p= recipe.description
               br
               h5 INGREDIENTS
               table
                 tbody
-                  each ingredient, i in recipe.ingredients
+                  each ingredient in recipe.ingredients
                     tr
                       td
-                        h5= ingredient.name
+                        p #{ingredient.name} &nbsp; 
                       td
-                        h5= ingredient.quantity
+                        p= ingredient.quantity
                           | gr
         .modal-footer
-          button.btn.btn-primary.btn-xs(type='button', data-dismiss='modal') Close
+          //- button.btn.btn-primary.btn-xs(type='button', data-dismiss='modal') Close

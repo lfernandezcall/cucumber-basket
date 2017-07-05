@@ -1,60 +1,57 @@
 <div class="container addRecipe-view">
-    <div class="row">
-        <div class="col-md-6 col-md-offset-3">
-            <form >
-                <div class="panel panel-primary">
-                    <div class="panel-heading">
-                        <h3 class="panel-title">Add Recipe</h3> </div>
-                    <div class="panel-body">
-                        <form>
-                            <div class="form-group">
-                                <label for="recipeName">Recipe Name</label>
-                                <input ng-model="title" type="text" class="form-control" id="recipeName" placeholder="Recipe Name...">
-                            </div>
-                            <div class="form-group">
-                                <label for="recipeDescription">Recipe Description</label>
-                                <input ng-model="description" type="text" class="form-control" id="recipeDescription" placeholder="Recipe Description...">
-                            </div>
-                            <div class="form-group">
-                                <label for="recipeImg">Recipe Image</label>
-                                <input ng-model="recipeImg" type="text" class="form-control" id="recipeImg" placeholder="Recipe Image...">
-                            </div>
-                            <div class="row">
-                                <div class="panel panel-default ingredient-panel">
-                                    <div class="panel-heading">
-                                        <h3 class="panel-title">Add ingredient</h3> </div>
-                                    <div class="panel-body">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <label for="ingredient">Ingredient</label>
-                                                <input type="text" ng-model="name" type="text" class="form-control" id="ingredient" placeholder="Ingredient Name...">
-                                            </div>
-                                            <div class="form-group">
-                                                <label for="quantity">Quantity</label>
-                                                <input type="number" ng-model="quantity" type="text" class="form-control" id="quantity" placeholder="Quantity...">
-                                            </div>
-                                            <button class="btn btn-block btn-default" ng-click="addIngredient()">Add Ingredient</button>
-                                        </div>
-                                        <div class="col-md-6">
-<!--                                         	<ul>
-                                        		<li ng-repeat="ingredient in ingredients">
-                                        			{{ingredient.name}} | {{ingredient.quantity}}
-                                        		</li>
-                                        	</ul> -->
-                                            <table>
-                                              <tr ng-repeat="ingredient in ingredients">
-                                                <td>{{ingredient.name}}</td>
-                                                <td>{{ingredient.quantity}}{{ingredient.quantity}}</td>
-                                              </tr>
-                                            </table>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+  <div class="row">
+    <div class="col-md-6 col-md-offset-3">
+      <form>
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Add Recipe</h3> 
+          </div>
+          <div class="panel-body">
+            <form>
+              <div class="form-group">
+                <label for="recipeName">Recipe Name</label>
+                <input ng-model="title" type="text" class="form-control" id="recipeName" placeholder="Recipe Name...">
+              </div>
+              <div class="form-group">
+                <label for="recipeDescription">Recipe Description</label>
+                <input ng-model="description" type="text" class="form-control" id="recipeDescription" placeholder="Recipe Description...">
+              </div>
+              <div class="form-group">
+                <label for="recipeImg">Recipe Image</label>
+                <input ng-model="recipeImg" type="text" class="form-control" id="recipeImg" placeholder="Recipe Image...">
+              </div>
+              <div class="row">
+                <div class="panel panel-default ingredient-panel">
+                  <div class="panel-heading">
+                      <h3 class="panel-title">Add ingredient</h3> </div>
+                  <div class="panel-body">
+                  <div class="col-md-6">
+                    <div class="form-group">
+                      <label for="ingredient">Ingredient</label>
+                      <input type="text" ng-model="name" type="text" class="form-control" id="ingredient" placeholder="Ingredient Name...">
                     </div>
+                    <div class="form-group">
+                      <label for="quantity">Quantity</label>
+                      <input type="number" ng-model="quantity" type="text" class="form-control" id="quantity" placeholder="Quantity...">
+                    </div>
+                    <button class="btn btn-block btn-default" ng-click="addIngredient()">Add Ingredient</button>
+                  </div>
+                    <div class="col-md-6">
+                      <table>
+                        <tr ng-repeat="ingredient in ingredients">
+                          <td>{{ingredient.name}} &nbsp;</td>
+                          <td>{{ingredient.quantity}}</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
                 </div>
-                <button ng-click="addRecipe()" type="submit" class="btn btn-block btn-default">Add Recipe</button>
-                </form>
+              </div>
+            </form>
+          </div>
         </div>
+        <button id="addRecipe-button" ng-click="addRecipe()" type="submit" class="btn btn-block btn-default">Add Recipe</button>
+      </form>
     </div>
+  </div>
 </div>
