@@ -1,5 +1,4 @@
 [![AngularJS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/angularjs.png)](https://angularjs.org/)
-[![JavaScript](https://github.com/Iggy-Codes/logo-images/blob/master/logos/js.png)](http://www.w3.org/)
 [![HTML5,CSS3 and JS](https://github.com/Iggy-Codes/logo-images/blob/master/logos/html5-css3-js.png)](http://www.w3.org/)
 [![ES6](https://github.com/Iggy-Codes/logo-images/blob/master/logos/es6.png)](http://www.ecma-international.org/ecma-262/6.0/)
 [![Bootstrap](https://github.com/Iggy-Codes/logo-images/blob/master/logos/bootstrap.png)](http://getbootstrap.com/)
