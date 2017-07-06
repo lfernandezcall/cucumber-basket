@@ -1,6 +1,11 @@
-<div class="editCollection-view">
+<div class="editCollection-view">  
   <div class="container">
-    <div ng-repeat="recipe in recipes">
+    <div class="custom-search-input">
+      <div class="input-group">
+        <input type="text" class="form-control input-sm" placeholder="Buscar" ng-model="navSearch" />
+      </div>
+    </div>
+    <div ng-repeat="recipe in recipes | filter: navSearch">
       <div class="col-xs-12 col-sm-6 col-md-4">
         <div class="thumbnail thumbnail-recipes">
           <div class="img-background">

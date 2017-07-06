@@ -1,4 +1,13 @@
 .editCollection-view {
+    // margin-top: -21px;
+    .custom-search-input {
+        .input-group {
+            width: 100%;
+            padding: 0px 15px 0px 15px;
+        }
+
+    }
+
     .img-background {
         overflow: hidden;
         height: 150px;
@@ -15,7 +24,7 @@
         }
     }
     .thumbnail-recipes {
-        max-width: 400px;
+        // max-width: 400px;
         margin: 20px auto;
         box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15);
         padding: 0;
