@@ -14,7 +14,7 @@
 
 # Cucumber Basket
 This repo contains full-stack MEAN project created for managing a library of recipes.
-This project is a _mobile friendly website_, take care of if you want to use it on your desktop.
+At the moment this project is a _mobile friendly website_.
 
 
 ## INSTRUCTIONS
@@ -25,14 +25,13 @@ To install the project in oyur computer is very simple. Only entering _npm insta
 You need to create an _.env_ archive with the **PORT=3000** and the **DB_URL=mongodb://admin:admin100@ds151631.mlab.com:51631/test_skylab**
 To have acces to the remote database.
 
-To start with the project in development mode you must "start" the server whit _mongod --dbpath ~/data/db_, after "run" the aplication (_nodemon server/app_).
-After that we need to _build_ the _app.js_, you must enter by console: _build:js_ (it is make the app) and _build:js:watch_ (to "listen the changes in the code").
-Also you must "start" the server whit _mongod --dbpath ~/data/db_
+To start with the project in development mode you must "start" the server whit _npm run dev_
+After that we need to _build_ the _app.js_ and the _styles.css_, you must enter by console: _npm run build:js_ _npm run build:scss_  and _build:js:watch_ _npm run build:scss:watch_ (to "listen the changes in the code").
 
 ## Parts
 
 - The project contains a resful _API_ with _endpoints_ for the _server_ and the _client_.
-- The project serves an _angular_ application to interact wiht the data of the server and manage the recipes
+- The project serves an _angular_ application to interact wiht the data of the server and manage the recipes in the _admin mode_. Also it has a part for the client working with _pug_.
 
 
 All the code has been developed under the [JavaScript Standard Style](http://standardjs.com/)
