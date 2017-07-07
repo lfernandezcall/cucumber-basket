@@ -6787,6 +6787,8 @@ input[type="checkbox"] {
   box-shadow: 3px -1px 23px 0px rgba(0, 0, 0, 0.15);
   padding: 0;
   border: 0; }
+  .plus-info-view .thumbnail img {
+    width: 100%; }
 
 .plus-info-view .modal-header h4 {
   color: #62843A; }
@@ -6863,6 +6865,8 @@ input[type="checkbox"] {
 .editCollection-view .custom-search-input .input-group {
   width: 100%;
   padding: 0px 15px 0px 15px; }
+  .editCollection-view .custom-search-input .input-group input {
+    box-shadow: 3px 3px 40px 0px rgba(0, 0, 0, 0.15); }
 
 .editCollection-view .img-background {
   overflow: hidden;
