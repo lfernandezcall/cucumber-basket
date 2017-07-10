@@ -2,16 +2,22 @@ const express = require('express')
 const path = require('path')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
-
-const app = express()
+const multer = require('multer')
 
 if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 const dbUrl = process.env.DB_URL
 const PORT = process.env.PORT
 
+const upload = multer({
+	dest: 'server/data/uploads/'
+})
+
+
 mongoose.promise = Promise
 mongoose.connect(dbUrl)
+
+const app = express()
 
 app.use(express.static('client/public'))
 app.use(express.static('server/data'))
@@ -27,10 +33,14 @@ const routerApiRecipes = require('./routes/api/recipes')
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
+
+app.post('/upload', upload.single('file'), (req, res) => {
+	res.send(JSON.stringify(req.file))
+})
+
 app.get('/', (eq, res) => {
   res.redirect('/home')
 })
-
 app.use('/home', routerHome)
 app.use('/recipes', routerRecipes)
 app.use('/api/recipe', routerApiRecipe)
