@@ -22,7 +22,6 @@ function AddRecipeController($scope, $rootScope, $location, Upload, DataService)
     }
 
     $scope.uploadFile = function() {
-
         const url = '/upload' 
         const file = $scope.file
 

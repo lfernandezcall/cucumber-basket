@@ -1,6 +1,6 @@
 const angular = require('angular')
 const angularRoute = require('angular-route')
-// const ngFileUpload = require('ngFileUpload')
+const ngFileUpload = require('ng-file-upload')
 
 const configRouteShowCollection = require('./showCollection')
 const CollectionController = require('./showCollection/CollectionController')
@@ -14,7 +14,7 @@ const EditCollectionController = require('./editCollection/EditCollectionControl
 const configRouteEditRecipe = require('./editRecipe')
 const EditRecipeController = require('./editRecipe/EditRecipeController')
 
-angular.module('adminCollectionRoutes', [ angularRoute, 'ngFileUpload' ])
+angular.module('adminCollectionRoutes', [ angularRoute, ngFileUpload ])
 
   .controller('CollectionController', CollectionController)
   .config(configRouteShowCollection)
