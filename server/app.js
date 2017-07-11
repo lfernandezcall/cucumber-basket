@@ -8,9 +8,12 @@ if (process.env.NODE_ENV !== 'production') { require('dotenv').config() }
 
 const dbUrl = process.env.DB_URL
 const PORT = process.env.PORT
+const PATH = process.env.PATH
+
+console.log( `This is the path of the .env archive: ${PATH}` )
 
 const upload = multer({
-	dest: 'server/data/uploads/'
+	dest: PATH
 })
 
 
